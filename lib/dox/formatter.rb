@@ -1,3 +1,4 @@
+require 'forwardable'
 require 'rspec/core'
 require 'rspec/core/formatters/base_formatter'
 require 'rspec/core/formatters/console_codes'
