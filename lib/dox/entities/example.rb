@@ -1,7 +1,7 @@
 module Dox
   module Entities
     class Example
-      extend Forwardable
+      extend ::Forwardable
 
       def_delegator :response, :status, :response_status
       def_delegator :response, :content_type, :response_content_type

@@ -4,7 +4,7 @@ require 'rspec/core/formatters/console_codes'
 
 module Dox
   class Formatter < RSpec::Core::Formatters::BaseFormatter
-    extend Forwardable
+    extend ::Forwardable
 
     RSpec::Core::Formatters.register self, :example_passed, :stop, :dump_summary
 
@@ -73,7 +73,7 @@ module Dox
     end
 
     class CurrentExample # :nodoc:
-      extend Forwardable
+      extend ::Forwardable
 
       delegate [:metadata] => :example
 
